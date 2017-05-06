@@ -1,0 +1,49 @@
+# Elementary OS
+deb http://ppa.launchpad.net/elementary-os/stable/ubuntu xenial main
+deb http://ppa.launchpad.net/elementary-os/os-patches/ubuntu xenial main
+
+# Docker
+deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable
+
+# dotnetcore
+deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main
+
+# Google Chrome
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+
+# Google Earth
+deb http://dl.google.com/linux/earth/deb/ stable main
+
+# Mono
+deb http://download.mono-project.com/repo/debian xenial main
+
+# f.lux
+deb http://ppa.launchpad.net/nathan-renniewaldock/flux/ubuntu xenial main
+
+# Neo4j
+deb http://debian.neo4j.org/repo stable/
+
+# NodeJS
+deb https://deb.nodesource.com/node_7.x xenial main
+
+# Peppermint OS (for ice)
+deb http://ppa.launchpad.net/peppermintos/release/ubuntu trusty main
+
+# R
+deb https://cloud.r-project.org/bin/linux/ubuntu xenial/
+
+# Steam
+deb [arch=amd64,i386] http://repo.steampowered.com/steam/ precise steam
+
+# VirtualBox
+deb http://download.virtualbox.org/virtualbox/debian xenial contrib
+
+# Vivaldi
+deb http://repo.vivaldi.com/snapshot/deb/ stable main
+
+# Visual Studio Code
+deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+
+# Zorin OS
+deb http://ppa.launchpad.net/zorinos/patches/ubuntu xenial main
+deb http://ppa.launchpad.net/zorinos/stable/ubuntu xenial main

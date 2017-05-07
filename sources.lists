@@ -47,3 +47,6 @@ deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
 # Zorin OS
 deb http://ppa.launchpad.net/zorinos/patches/ubuntu xenial main
 deb http://ppa.launchpad.net/zorinos/stable/ubuntu xenial main
+
+# Albert
+deb http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu xenial main

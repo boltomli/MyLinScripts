@@ -1,3 +1,4 @@
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1655A0AB68576280 7EA0A9C3F273FCD8 51716619E084DAB9 26C95CF201182252 B02C46DF417A0893 A6A19B38D3D831EF
 # Elementary OS
 deb http://ppa.launchpad.net/elementary-os/stable/ubuntu xenial main
 deb http://ppa.launchpad.net/elementary-os/os-patches/ubuntu xenial main
@@ -24,7 +25,7 @@ deb http://ppa.launchpad.net/nathan-renniewaldock/flux/ubuntu xenial main
 deb http://debian.neo4j.org/repo stable/
 
 # NodeJS
-deb https://deb.nodesource.com/node_7.x xenial main
+deb https://deb.nodesource.com/node_8.x xenial main
 
 # Peppermint OS (for ice)
 deb http://ppa.launchpad.net/peppermintos/release/ubuntu trusty main

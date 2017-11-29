@@ -16,6 +16,6 @@ sudo apt install -y \
                  haxe icont intercal iverilog jasmin-sable jq julia ksh \
                  libgd-dev libtool-bin lisaac livescript llvm minizinc mlton mono-mcs mono-vbnc \
                  nim nodejs node-typescript ocaml open-cobol openjdk-8-jdk \
-                 parser3-cgi python ratfor rc regina-rexx rhino rustc \
+                 parser3-cgi python ratfor rc regina-rexx rustc \
                  scala scilab slsh squirrel3 tcsh valac xsltproc yabasic yorick zoem zsh
 ```

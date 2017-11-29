@@ -15,7 +15,7 @@ sudo apt install -y \
                  gnat gnu-smalltalk gnuplot gobjc golang gpt gri groff groovy guile-2.0 \
                  haxe icont intercal iverilog jasmin-sable jq julia ksh \
                  libgd-dev libtool-bin lisaac livescript llvm minizinc mlton mono-mcs mono-vbnc \
-                 nim nodejs node-typescript ocaml ocaml-interp open-cobol openjdk-8-jdk \
-                 parser3-cgi pkg-config python ratfor rc regina-rexx rhino rustc \
+                 nim nodejs node-typescript ocaml open-cobol openjdk-8-jdk \
+                 parser3-cgi python ratfor rc regina-rexx rhino rustc \
                  scala scilab slsh squirrel3 tcsh valac xsltproc yabasic yorick zoem zsh
 ```

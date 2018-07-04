@@ -14,7 +14,7 @@ sudo apt install -y \
                  bc bf bison bsdgames bsh build-essential clisp clojure cmake coffeescript \
                  dafny dc doxygen ecere-dev elixir emacs fish flex fp-compiler fsharp \
                  gap gawk gdc generator-scripting-language genius gforth gfortran \
-                 ghc gnat gnu-smalltalk gnuplot gobjc golang gpt gri groff groovy guile-2.2 \
+                 ghc gnat gnu-smalltalk gnuplot gobjc golang gpt graphviz gri groff groovy guile-2.2 \
                  haxe icont intercal iverilog jasmin-sable jq ksh libgd-dev libtool-bin \
                  lisaac livescript llvm lua5.3 maxima minizinc mlton mono-mcs mono-vbnc \
                  nickle nim nodejs node-typescript ocaml octave open-cobol openjdk-8-jdk \

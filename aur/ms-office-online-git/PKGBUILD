@@ -1,0 +1,28 @@
+pkgname=('ms-office-online-git')
+_origpkgname="ms-office-online-launcher"
+pkgver=f0be4ad
+pkgrel=1
+pkgdesc="Microsoft Office Suite Online as a native application"
+url="https://www.office.com/"
+depends=('jade-application-kit' 'qt5-webengine')
+license=('GPL3' 'CC')
+arch=('any')
+provides=('ms-office-online')
+conflicts=('ms-office-online')
+source=("git+https://gitlab.manjaro.org/applications/$_origpkgname.git")
+sha256sums=('SKIP')
+
+pkgver() {
+    cd "$_origpkgname"
+    printf "$(git rev-parse --short HEAD)"
+}
+
+package() {
+    cd "$_origpkgname"
+    mkdir -p $pkgdir/usr/bin
+    mkdir -p $pkgdir/usr/share/{applications,pixmaps}
+    cp launcher.desktop $pkgdir/usr/share/applications/ms-office-online.desktop
+    cp icons/office.png $pkgdir/usr/share/pixmaps/ms-office.png
+    cp ms-office-online $pkgdir/usr/bin
+    chmod a+x $pkgdir/usr/bin
+}

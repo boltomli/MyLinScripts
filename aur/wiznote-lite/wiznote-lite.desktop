@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WizNote Lite
+Comment=Live preview markdown editor
+Comment[zh_CN]=实时预览 Markdown 编辑器
+Exec=/opt/wiznote-lite/wiznotelite %U
+Terminal=false
+Type=Application
+Icon=wiznote-lite
+Categories=Utility

@@ -1,0 +1,28 @@
+pkgname=wiznote-lite
+pkgver=1.1
+pkgrel=1
+pkgdesc="Live preview markdown editor"
+arch=('x86_64')
+url="https://www.wiz.cn/wiznote-lite"
+license=('MIT' 'custom')
+makedepends=('git' 'nodejs-foreman' 'node-gyp')
+provides=(wiznote-lite=$pkgver)
+_wiznote_project_name="WizNoteLite"
+source=("git+https://github.com/WizTeam/${_wiznote_project_name}.git#branch=${pkgver}"
+        "${pkgname}.desktop")
+md5sums=('SKIP'
+         'd50159948f6660ddc1a627596a7988c8')
+
+build() {
+  cd $srcdir/${_wiznote_project_name}
+  npm install
+  ./node_modules/.bin/electron ./tools/build_sqlite3
+  npm run pack
+}
+
+package() {
+  mkdir $pkgdir/opt
+  cp -R $srcdir/${_wiznote_project_name}/out/linux-unpacked $pkgdir/opt/${pkgname}
+  install -Dm644 ${srcdir}/${_wiznote_project_name}/public/image/512.png $pkgdir/usr/share/pixmaps/${pkgname}.png
+  install -Dm644 ${srcdir}/${pkgname}.desktop ${pkgdir}/usr/share/applications/${pkgname}.desktop
+}

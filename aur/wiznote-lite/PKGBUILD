@@ -1,5 +1,5 @@
 pkgname=wiznote-lite
-pkgver=1.4.1
+pkgver=1.6
 pkgrel=1
 pkgdesc="Live preview markdown editor"
 arch=('x86_64')

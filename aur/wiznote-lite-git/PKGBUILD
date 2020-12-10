@@ -1,22 +1,25 @@
-pkgname=wiznote-lite
-pkgver=2.0.1
+pkgname=wiznote-lite-git
+pkgver=2.1.0
 pkgrel=1
 pkgdesc="Live preview markdown editor"
 arch=('x86_64')
 url="https://www.wiz.cn/wiznote-lite"
 license=('MIT' 'custom')
 makedepends=('git' 'nodejs-foreman' 'node-gyp')
-provides=(wiznote-lite=$pkgver)
+provides=(wiznote-lite)
+conflicts=(wiznote-lite)
 _wiznote_project_name="WizNoteLite"
-source=("git+https://github.com/WizTeam/${_wiznote_project_name}.git#branch=${pkgver}"
+source=("git+https://github.com/WizTeam/${_wiznote_project_name}.git"
         "${pkgname}.desktop")
 md5sums=('SKIP'
          'd50159948f6660ddc1a627596a7988c8')
 
 build() {
   cd $srcdir/${_wiznote_project_name}
+  git checkout ${pkgver}
   npm install
   ./node_modules/.bin/electron ./tools/build_sqlite3
+  npx browserslist@latest --update-db
   npm run pack
 }
 

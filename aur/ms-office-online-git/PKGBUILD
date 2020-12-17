@@ -1,6 +1,6 @@
 pkgname=('ms-office-online-git')
 _origpkgname="ms-office-online-launcher"
-pkgver=f0be4ad
+pkgver=8c38757
 pkgrel=1
 pkgdesc="Microsoft Office Suite Online as a native application"
 url="https://www.office.com/"

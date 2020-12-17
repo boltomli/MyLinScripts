@@ -18,6 +18,7 @@ md5sums=('SKIP'
 build() {
   cd $srcdir/${_wiznote_project_name}
   git checkout ${pkgver}
+  git pull
   npm install
   ./node_modules/.bin/electron ./tools/build_sqlite3
   npx browserslist@latest --update-db

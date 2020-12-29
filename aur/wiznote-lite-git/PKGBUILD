@@ -1,6 +1,6 @@
 pkgname=wiznote-lite-git
-pkgver=2.1.0
-pkgrel=2
+pkgver=2.1.2
+pkgrel=1
 pkgdesc="Live preview markdown editor"
 arch=('x86_64')
 url="https://www.wiz.cn/wiznote-lite"
